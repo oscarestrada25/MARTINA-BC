@@ -179,9 +179,9 @@ export function Home({ navigateTo }: HomeProps) {
                 muted
                 playsInline
                 preload="auto"
-                src="https://drive.google.com/uc?export=download&id=1x2XQyz7v0KGcleQkDNWEUthAJ4vWOAlb"
               >
-                Tu navegador no soporta el tag de video.
+                <source src="./src/assets/MARTINA AGOSTOP 24.mp4" type="video/mp4" />
+               
               </video>
               
               {/* Overlay sutil sobre el video */}
