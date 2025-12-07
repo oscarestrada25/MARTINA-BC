@@ -17,6 +17,7 @@ interface HomeProps {
 }
 
 export function Home({ navigateTo }: HomeProps) {
+  const videoSrc = new URL('../assets/MARTINA AGOSTOP 24.mp4', import.meta.url).href;
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
@@ -180,7 +181,7 @@ export function Home({ navigateTo }: HomeProps) {
                 playsInline
                 preload="auto"
               >
-                <source src="./src/assets/MARTINA AGOSTOP 24.mp4" type="video/mp4" />
+                <source src={videoSrc} type="video/mp4" />
                
               </video>
               
